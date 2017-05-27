@@ -1,0 +1,55 @@
+{
+  "name": "webpack_with_typescript",
+  "version": "1.0.0",
+  "description": "webpack with typescript",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rimraf dist/bundle.js",
+    "build-dev": "npm run cleanup && webpack webpack.config.js",
+    "start": "webpack-dev-server --watch --inline",
+    "build-prod": "npm run cleanup && webpack -p webpack-prod.config.js"
+  },
+  "keywords": [
+    "webpack",
+    "typescript"
+  ],
+  "author": "vamsi krishna sridhara",
+  "license": "ISC",
+  "dependencies": {
+    "awesome-typescript-loader": "^3.1.3",
+    "jquery": "^3.2.1",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1",
+    "underscore": "^1.8.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5",
+    "rimraf": "latest",
+    "d3": "latest",
+    "lodash": "latest"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.3",
+    "jquery": "^3.2.1",
+    "rimraf": "^2.6.1",
+    "strip-loader": "^0.1.2",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1",
+    "underscore": "^1.8.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5",
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-preset-es2015": "latest",
+    "css-loader": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "file-loader": "latest",
+    "node-sass": "latest",
+    "sass-loader": "latest",
+    "style-loader": "latest",
+    "url-loader": "latest",
+    "d3": "latest",
+    "lodash": "latest"
+  }
+}
